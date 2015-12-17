@@ -1,4 +1,4 @@
-package nju.iip.model;
+package nju.iip.dto;
 
 import org.apache.solr.client.solrj.beans.Field;
 

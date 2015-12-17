@@ -38,6 +38,7 @@ public class SolrImpl {
 			query.setStart(start);// 从第几条开始查询
 			query.setHighlight(true); // 开启高亮组件
 			query.addHighlightField("text");
+			query.addHighlightField("title");
 			query.setHighlightSimplePre("<font color='red'>");// 标记
 			query.setHighlightSimplePost("</font>");
 			QueryResponse response = solr.query(query);

@@ -1,3 +1,4 @@
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <head>
 	<title>Login One</title>
@@ -14,12 +15,12 @@
 	<div class="container">
 		<div class="col-md-12">
 			<h1 class="margin-bottom-15">Welcome!</h1>
-			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="#" method="post">				
+			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" action="login" method="post">				
 		        <div class="form-group">
 		          <div class="col-xs-12">		            
 		            <div class="control-wrapper">
 		            	<label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
-		            	<input type="text" class="form-control" id="username" placeholder="Username">
+		            	<input type="text" class="form-control" name="username" placeholder="Username">
 		            </div>		            	            
 		          </div>              
 		        </div>
@@ -27,7 +28,7 @@
 		          <div class="col-md-12">
 		          	<div class="control-wrapper">
 		            	<label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
-		            	<input type="password" class="form-control" id="password" placeholder="Password">
+		            	<input type="password" class="form-control" name="password" placeholder="Password">
 		            </div>
 		          </div>
 		        </div>
@@ -51,7 +52,7 @@
 		        <hr>
 		      </form>
 		      <div class="text-center">
-		      	<a href="create-account.html" class="templatemo-create-new">新建账户 <i class="fa fa-arrow-circle-o-right"></i></a>	
+		      	<a href="create-account.html" class="templatemo-create-new">注册 <i class="fa fa-arrow-circle-o-right"></i></a>	
 		      </div>
 		</div>
 	</div>
