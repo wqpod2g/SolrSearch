@@ -60,16 +60,15 @@
 		<div id="head">
 			<div class="s_nav">
 				<a href="http://iip.nju.edu.cn" class="s_logo"> <img
-					alt="智能信息处理研究组" src="images/weibo.png" height="45px">
+					alt="智能信息处理研究组" src="images/wechat.jpg" height="45px">
 				</a>
 				<div class="s_tab" id="s_tab">
 				<a href="Search.jsp">首页</a>&nbsp;&nbsp;
-					<a href="javascript:void(0)">新闻</a>&nbsp;&nbsp; <a
-						href="javascript:void(0)">更多»</a>
+					<a href="javascript:void(0)">更多»</a>
 				</div>
 			</div>
 			<br>
-			<form name="f" action="WeiboQuery" class="fm" >
+			<form name="f" action="WechatQuery" class="fm" >
 				<span class="bg s_ipt_wr"> <input name="query" id="kw"
 					class="s_ipt" value='${query}' maxlength="200">
 				</span> <input type="submit" value="搜索" class="btn btn-primary btn-large" id="mrs_qbutton">
@@ -87,24 +86,18 @@
 		<div id="main">
 
 			<div class="content">
-				<c:forEach items="${weibo_list}" var="weibo">
+				<c:forEach items="${wechat_list}" var="wechat">
 					<table cellpadding="0" cellspacing="0" class="result">
 						<tr>
 							<td class=f>
 								<h3 class="t">
-									<a href="${weibo.weiboUrl}" target="_blank">${weibo.author}</a>
-								</h3> <font size=-1><div class="realtime">来源：&nbsp;${weibo.author}&nbsp;</div>
-									${weibo.text}<br> <font color="#008000"><span><a
-											class="g" href="${weibo.weiboUrl}">${weibo.weiboUrl}</a>...&nbsp;${weibo.postTime}&nbsp;</span></font>-&nbsp;
-									<a href="${weibo.weiboUrl}"
+									<a href="${wechat.url}" target="_blank">${wechat.title}</a>
+								</h3> <font size=-1><div class="realtime">来源：&nbsp;${wechat.sourceName}&nbsp;</div>
+									${wechat.text}<br> <font color="#008000"><span><a
+											class="g" href="http://weixin.sogou.com${wechat.url}">http://weixin.sogou.com${wechat.url.substring(0,50)}</a>...&nbsp;${wechat.postTime}&nbsp;</span></font>-&nbsp;
+									<a href="${wechat.url}"
 									target="_blank" class="m">搜索快照</a> <br> </font>
 							</td>
-						</tr>
-						<tr>
-						<td>
-						<span class="glyphicon glyphicon-heart" aria-hidden="true" title="点赞"></span>&nbsp;${weibo.loves}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<span class="glyphicon glyphicon-comment" aria-hidden="true" title="评论"></span>&nbsp;${weibo.comment}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<span class="glyphicon glyphicon-share" aria-hidden="true" title="转发"></span>&nbsp;${weibo.repost}</td>
 						</tr>
 					</table>
 					<br>
@@ -114,18 +107,18 @@
 
 			<p id="page">
 				<c:if test="${page.totalRecords!=0}">
-					<a href='WeiboQuery?query=${query}&pageNo=0'
+					<a href='WechatQuery?query=${query}&pageNo=0'
 						class="n">首页</a>
 					<c:if test="${page.pageNo != 0}">
 						<a
-							href='WeiboQuery?query=${query}&pageNo=${page.getPreviousPageNo()}'
+							href='WechatQuery?query=${query}&pageNo=${page.getPreviousPageNo()}'
 							class="n">&lt;上一页</a>
 					</c:if>
 					<c:forEach var="item" begin="${page.getBegin()}"
 						end="${page.getEnd()}" step="1">
 						<c:choose>
 							<c:when test="${item!=page.pageNo}">
-								<a href='WeiboQuery?query=${query}&pageNo=${item}'>
+								<a href='WechatQuery?query=${query}&pageNo=${item}'>
 									<span class="fk"></span> <span class="pc">${item+1}</span>
 								</a>
 							</c:when>
@@ -137,11 +130,11 @@
 					</c:forEach>
 					<c:if test="${page.pageNo != page.getTotalPages()-1}">
 						<a
-							href='WeiboQuery?query=${query}&pageNo=${page.getNextPageNo()}'
+							href='WechatQuery?query=${query}&pageNo=${page.getNextPageNo()}'
 							class="n">下一页&gt;</a>
 					</c:if>
 					<a
-						href='WeiboQuery?query=${query}&pageNo=${page.getBottomPageNo()}'
+						href='WechatQuery?query=${query}&pageNo=${page.getBottomPageNo()}'
 						class="n">最后一页</a>
 				</c:if>
 			</p>

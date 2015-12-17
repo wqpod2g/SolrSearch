@@ -18,7 +18,17 @@ public class Wechat {
 	private String url;
 	@Field
 	private String sourceName;
+	@Field
+	private String postTime;
 	
+
+	public String getPostTime() {
+		return postTime;
+	}
+
+	public void setPostTime(String postTime) {
+		this.postTime = postTime;
+	}
 
 	public String getId() {
 		return id;

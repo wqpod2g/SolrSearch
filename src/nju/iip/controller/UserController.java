@@ -23,11 +23,12 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/login")
 	public String login(AdminUser user) {
-		logger.info("login called");
 		if(userDao.validate(user)) {
+			logger.info("login ok");
 			return "index.jsp";
 		}
 		else {
+			logger.info("login error");
 			return "login-1.jsp";
 		}
 		

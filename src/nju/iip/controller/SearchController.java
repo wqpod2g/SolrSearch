@@ -44,7 +44,10 @@ public class SearchController {
 		logger.info("type="+type);
 		logger.info("query="+query);
 		logger.info("page.no="+page.getPageNo());
-		if(type.equals("weibo")) {
+		if(type==null) {
+			return WeiboQuery(query,page,model);
+		}
+		else if(type.equals("weibo")) {
 			return WeiboQuery(query,page,model);
 		}
 		else if(type.equals("wechat")) {

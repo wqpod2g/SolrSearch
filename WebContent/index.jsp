@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Dashboard I Admin Panel</title>
+	<title>Dashboard</title>
 	
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
 	<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
@@ -51,54 +51,46 @@
 
 	<header id="header">
 		<hgroup>
-			<h1 class="site_title"><a href="index.html">Website Admin</a></h1>
+			<h1 class="site_title"><a href="index.html">数据管理</a></h1>
 			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="http://www.medialoot.com">View Site</a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
 	
 	
 	<aside id="sidebar" class="column">
-		<h3>Content</h3>
+		<h3>数据源</h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="#">New Article</a></li>
-			<li class="icn_edit_article"><a href="#">Edit Articles</a></li>
-			<li class="icn_categories"><a href="#">Categories</a></li>
-			<li class="icn_tags"><a href="#">Tags</a></li>
+			<li class="icn_edit_article"><a href="#">微博</a></li>
+			<li class="icn_categories"><a href="#">微信</a></li>
+			<li class="icn_tags"><a href="#">其他</a></li>
 		</ul>
-		<h3>Users</h3>
+		<h3>用户</h3>
 		<ul class="toggle">
-			<li class="icn_add_user"><a href="#">Add New User</a></li>
-			<li class="icn_view_users"><a href="#">View Users</a></li>
-			<li class="icn_profile"><a href="#">Your Profile</a></li>
+			<li class="icn_add_user"><a href="#">新增用户</a></li>
+			<li class="icn_view_users"><a href="#">查看所有用户</a></li>
 		</ul>
-		<h3>Admin</h3>
+		<h3>管理员</h3>
 		<ul class="toggle">
-			<li class="icn_settings"><a href="#">Options</a></li>
-			<li class="icn_security"><a href="#">Security</a></li>
-			<li class="icn_jump_back"><a href="#">Logout</a></li>
+			<li class="icn_settings"><a href="#">选项</a></li>
+			<li class="icn_security"><a href="#">安全</a></li>
+			<li class="icn_jump_back"><a href="#">退出</a></li>
 		</ul>
 		
 	</aside><!-- end of sidebar -->
 	
-	<section id="main" class="column">
+	<section id="main" class="column weibo">
 		
 		<article class="module width_3_quarter">
-			<header><h3>Stats</h3></header>
+			<header><h3>微博数据源</h3></header>
 			<div class="module_content">
 				<article class="stats_overview">
 					<div class="overview_today">
-						<p class="overview_day">Today</p>
+						<p class="overview_day">今日新增</p>
 						<p class="overview_count">1,876</p>
-						<p class="overview_type">Hits</p>
-						<p class="overview_count">2,103</p>
-						<p class="overview_type">Views</p>
 					</div>
 					<div class="overview_previous">
-						<p class="overview_day">Yesterday</p>
-						<p class="overview_count">1,646</p>
-						<p class="overview_type">Hits</p>
-						<p class="overview_count">2,054</p>
-						<p class="overview_type">Views</p>
+						<p class="overview_day">总微博数</p>
+						<p class="overview_count">20,163</p>
 					</div>
 				</article>
 				<div class="clear"></div>
@@ -106,7 +98,7 @@
 		</article><!-- end of stats article -->
 		
 		<article class="module width_3_quarter">
-		<header><h3 class="tabs_involved">Content Manager</h3>
+		<header><h3 class="tabs_involved">待爬微博帐号管理</h3>
 		</header>
 
 		<div class="tab_container">
@@ -115,10 +107,10 @@
 			<thead> 
 				<tr> 
    					<th></th> 
-    				<th>Entry Name</th> 
-    				<th>Category</th> 
-    				<th>Created On</th> 
-    				<th>Actions</th> 
+    				<th>微博帐号名</th> 
+    				<th>URL</th> 
+    				<th>添加时间</th> 
+    				<th>操作</th> 
 				</tr> 
 			</thead> 
 			<tbody> 
