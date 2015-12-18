@@ -49,7 +49,7 @@
 <body>
   <div class="container-fluid">
     	<ul class="nav nav-pills pull-right header">
-            <li><a href="./login-1.html" id="signin-btn"><span class="glyphicon glyphicon-user" aria-hidden="true" title="登录"></span>&nbsp;登录</a></li>            
+            <li><a href="./login-1.jsp" id="signin-btn"><span class="glyphicon glyphicon-user" aria-hidden="true" title="登录"></span>&nbsp;登录</a></li>            
             <li><a href="./Search.jsp"><span class="glyphicon glyphicon-home" aria-hidden="true" title="实验室"></span>&nbsp;实验室</a></li>
             <li><a href="./Search.jsp"><span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="帮助"></span>&nbsp;帮助</a></li>
         </ul>
