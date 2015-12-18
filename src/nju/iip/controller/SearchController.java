@@ -69,7 +69,7 @@ public class SearchController {
 			return "Search.jsp";
 		}
 		page.setPageSize(Integer.valueOf(Config.getValue("countPerPage")));
-		QueryResponse rsp =  solrImpl.queryDocuments(query,page.getPageNo()*page.getPageSize(),"collection");
+		QueryResponse rsp =  solrImpl.queryDocuments(query,page.getPageNo()*page.getPageSize(),"collection1");
 		SolrDocumentList list = rsp.getResults();
 		Map<String, Map<String, List<String>>> highlight_map = rsp.getHighlighting();
 		DocumentObjectBinder binder = new DocumentObjectBinder();

@@ -12,6 +12,7 @@ public class AdminUserDao extends DAO{
 	private static final Logger logger = LoggerFactory.getLogger(AdminUserDao.class);
 	
 	public  boolean validate(AdminUser user) {
+		logger.error("validate called");
 		boolean flag = false;
 		try{
 			begin();
@@ -21,6 +22,7 @@ public class AdminUserDao extends DAO{
 			if(query.uniqueResult()!=null) {
 				flag = true;
 			}
+			commit();
 		}catch(Exception e) {
 			rollback();
 			logger.error("validate failed!",e);

@@ -4,7 +4,7 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="nju.iip.dto.AdminUser" table="AdminUser">
+	<class name="nju.iip.dto.AdminUser" table="adminuser">
 		<meta attribute="class-description">
 			This class contains the nju.iip.dto.WeiboData detail.
 		</meta>

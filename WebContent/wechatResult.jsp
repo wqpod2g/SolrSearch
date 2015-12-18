@@ -6,8 +6,7 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link type="text/css" rel="stylesheet" href="css/result.css" />
-<link rel="stylesheet"
-	href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/index.css"/>
 <link rel="stylesheet" href="css/common.css"/>
 <title>${query}_IIP_SEARCH</title>
