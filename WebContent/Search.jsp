@@ -46,8 +46,7 @@
 				value="搜索" class="btn btn-primary btn-large" id="mrs_qbutton">
 			<br>
 			<label><input name="type" type="radio" value="weibo" />&nbsp;搜微博&nbsp;&nbsp; </label> 
-            <label><input name="type" type="radio" value="wechat" />&nbsp;搜微信 &nbsp;&nbsp;</label> 
-            <label><input name="type" type="radio" value="else" />&nbsp;其它 &nbsp;&nbsp;</label> 
+            <label><input name="type" type="radio" value="website" />&nbsp;搜相关站点&nbsp;&nbsp;</label> 
 		</form>
 	</div>
 
