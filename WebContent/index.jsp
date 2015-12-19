@@ -277,8 +277,7 @@
 								<td>Dolor Lorem Amet</td>
 								<td>Articles</td>
 								<td>16th April 2011</td>
-								<td><input type="image" src="images/icn_edit.png"
-									title="Edit"><input type="image"
+								<td><input type="image"
 									src="images/icn_trash.png" title="Trash"></td>
 							</tr>
 						</tbody>
